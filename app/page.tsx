@@ -1,9 +1,15 @@
-import UserList from "@/widgets/users/userList/userList";
+import { getUsers } from "@/api/users";
+import UserFilter from "@/widgets/users/userFilter";
 
-export default function Home() {
+export default async function Home() {
+  const users = await getUsers();
+
   return (
-    <>
-      <UserList />
-    </>
+    <div className="wrap">
+      <UserFilter users={users} />
+    </div>
   );
 }
+
+
+// so what I struggle to define is how to handle now filtering. Should it send a fetch request, or to handle it purely on FE?

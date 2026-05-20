@@ -1,3 +1,5 @@
+"use client"
+
 import { forwardRef, InputHTMLAttributes, useId, useState, FocusEvent } from 'react';
 import "./input.css";
 
