@@ -1,0 +1,45 @@
+.user-list__list {
+    padding: 0;
+}
+
+.user-list__list-item {
+    padding: 1.5rem 0.25rem;
+    border-bottom: 1px solid grey;
+    list-style-type: none;
+}
+
+.user-list__email {
+    display: block;
+    font-weight: 700;
+}
+
+.user-list__user {
+    display: inline-block;
+    width: 300px;
+}
+
+.user-list__company {
+    margin-left: 1.25rem;
+}
+
+.user-list__no-results {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.user-list__name {
+    border: 0;
+    background-color: transparent;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    will-change: transform;
+    transition: transform 0.3s ease-in;
+    transform-origin: top left;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
