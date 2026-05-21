@@ -1,0 +1,14 @@
+.user-page__name {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.user-page__list {
+    padding: 0;
+}
+
+.user-page__list-item {
+    padding: 1.5rem 0.25rem;
+    border-bottom: 1px solid grey;
+    list-style-type: none;
+}

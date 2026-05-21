@@ -1,9 +1,8 @@
-import { Link } from "react-router";
+import { routes } from '@/app/routes';
 import './navigation.css';
-import { routes } from "../../router/routes";
+import Link from 'next/link';
 
 const Navigation = () => {
-
   return (
     <nav className="navigation">
       <div className="wrap">
@@ -11,7 +10,7 @@ const Navigation = () => {
           {
             routes.map(({ label, path }) => (
               <li className="navigation__item" key={label.toLowerCase().replaceAll(' ', '-')}>
-                <Link className="navigation__link" to={path}>{label}</Link>
+                <Link className="navigation__link" href={path}>{label}</Link>
               </li>
             ))
           }

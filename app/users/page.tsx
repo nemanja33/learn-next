@@ -1,6 +1,12 @@
-const UsersPage  = () => {
+import { getUsers } from "@/api/users";
+import UserFilter from "@/widgets/users/userFilter";
 
-    return (<>Users page</>)
-};
+export default async function UsersPage() {
+  const users = await getUsers();
 
-export default UsersPage;
+  return (
+    <div className="wrap">
+      <UserFilter users={users} />
+    </div>
+  );
+}

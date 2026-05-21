@@ -13,7 +13,7 @@ export default function UserFilter({
   users
 }: UserFilterProps) {
   const [ term, setTerm ] = useState<string>("")
-  const filterdUsers = useMemo(() =>
+  const filteredUsers = useMemo(() =>
     users.filter(user => user.name.toLowerCase().includes(term))
   , [term])
 
@@ -21,10 +21,10 @@ export default function UserFilter({
     <div className="wrap">
       <Input label="filter" onChange={(e) => setTerm(e.target.value)} />
       {
-        !filterdUsers.length ? (
+        !filteredUsers.length ? (
           <div className="user-list__no-results">No results found!</div>
         ) : (
-          <UserList users={filterdUsers} />
+          <UserList users={filteredUsers} />
         )
       }
     </div>

@@ -43,3 +43,9 @@
         transform: scale(1.05);
     }
 }
+
+.user-list__link {
+    &:hover {
+        text-decoration: underline;
+    }
+}
