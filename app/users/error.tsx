@@ -1,11 +1,9 @@
 "use client"
 
-const ErrorPage  = () => {
+export default function ErrorPage () {
     return (
         <div>
             <span className="error">Something went wrong! Please try a bit later!</span>
         </div>
     )
 };
-
-export default ErrorPage;

@@ -1,6 +1,6 @@
 const items = 3;
 
-const Loading  = () => {
+export default function Loading() {
     return (
         <div className="wrap" aria-label="Loading skeleton">
         <span className="skeleton skeleton--w10 skeleton--h10"></span>
@@ -23,5 +23,3 @@ const Loading  = () => {
     </div>
     )
 };
-
-export default Loading;

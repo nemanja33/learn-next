@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-const ErrorPage  = () => {
+export default function ErrorPage () {
     return (
         <div>
             <span className="error">Error loading user!</span>
@@ -10,5 +10,3 @@ const ErrorPage  = () => {
         </div>
     )
 };
-
-export default ErrorPage;

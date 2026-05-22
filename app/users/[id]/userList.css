@@ -12,3 +12,13 @@
     border-bottom: 1px solid grey;
     list-style-type: none;
 }
+
+.user-page__back {
+    display: block;
+    margin: 1rem 0;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

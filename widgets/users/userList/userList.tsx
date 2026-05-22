@@ -1,4 +1,4 @@
-import { getUsers, User } from "@/api/users";
+import { User } from "@/app/api/users/types";
 import "./userList.css";
 import Link from "next/link";
 

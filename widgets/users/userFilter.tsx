@@ -1,6 +1,6 @@
 "use client"
 
-import { User } from "@/api/users";
+import { User } from "@/app/api/users/types";
 import { Input } from "@/components/input/input";
 import UserList from "@/widgets/users/userList/userList";
 import { useMemo, useState } from "react";
