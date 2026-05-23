@@ -13,8 +13,8 @@ const UserDetailPage = async({
     const { id } = await params;
 
     const [user, posts] = await Promise.all([
-        await getUser(id),
-        await getPosts(id)
+        getUser(id),
+        getPosts(id)
     ]);
 
     if (!user || !posts) return null
@@ -24,7 +24,7 @@ const UserDetailPage = async({
             <div className="wrap">
                 <h2 className="user-page__name">{user.name}</h2>
                 <span>Post list</span>
-                <Link className="user-page__back" href="/">Back</Link>
+                <Link className="user-page__back" href="/users">Back</Link>
                 <ul className="user-page__list">
                     {
                         posts.map(({ id, title, body }) => (

@@ -2,18 +2,18 @@ import { User } from "@/app/api/users/types";
 import "./userList.css";
 import Link from "next/link";
 
-interface UserFilterProps {
+interface UserListProps {
   users: User[]
 }
 
 function UserList({
   users
-}: UserFilterProps) {
+}: UserListProps) {
     
     return (
         <>
             {
-                !!users && (
+                users.length > 0 && (
                     <ul className='user-list__list'> 
                         {
                             users.map(({id, name, email, company}) => (

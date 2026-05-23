@@ -15,10 +15,10 @@ export default function UserFilter({
   const [ term, setTerm ] = useState<string>("")
   const filteredUsers = useMemo(() =>
     users.filter(user => user.name.toLowerCase().includes(term))
-  , [term])
+  , [term, users])
 
   return (
-    <div className="wrap">
+    <>
       <Input label="filter" onChange={(e) => setTerm(e.target.value)} />
       {
         !filteredUsers.length ? (
@@ -27,6 +27,6 @@ export default function UserFilter({
           <UserList users={filteredUsers} />
         )
       }
-    </div>
+    </>
   );
 }
